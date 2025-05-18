@@ -18,7 +18,7 @@ COMPILER_FLAGS_KERNEL="-mtune=cortex-a9 -fno-diagnostics-show-caret"
 COMPILER_FLAGS_MODULE="-mtune=cortex-a9 -fno-diagnostics-show-caret"
 
 KERNEL_IMAGE="zImage"
-COMPILE_DTB="n"
+COMPILE_DTB="y"
 DTBTOOL=""
 DTBTOOL_CMD=""
 MODULES_IN_SYSTEM="y"
@@ -39,7 +39,7 @@ SMB_SHARE_BACKUP=""
 SMB_FOLDER_BACKUP=""
 SMB_AUTH_BACKUP=""
 
-NUM_CPUS="8"   # number of cpu cores used for build (leave empty for auto detection)
+NUM_CPUS="4"   # number of cpu cores used for build (leave empty for auto detection)
 
 #######################################
 # automatic parameters, do not touch !
