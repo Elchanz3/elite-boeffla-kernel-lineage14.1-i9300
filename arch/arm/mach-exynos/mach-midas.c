@@ -2379,25 +2379,25 @@ static struct platform_device *midas_devices[] __initdata = {
 /* below temperature base on the celcius degree */
 struct s5p_platform_tmu midas_tmu_data __initdata = {
 	.ts = {
-		.stop_1st_throttle  = 85,
-		.start_1st_throttle = 90,
-		.stop_2nd_throttle  = 95,
-		.start_2nd_throttle = 100,
-		.start_tripping	    = 110, /* temp to do tripping */
-		.start_emergency    = 120, /* To protect chip,forcely kernel panic */
-		.stop_mem_throttle  = 83,
-		.start_mem_throttle = 88,
+		.stop_1st_throttle  = 285,
+		.start_1st_throttle = 290,
+		.stop_2nd_throttle  = 295,
+		.start_2nd_throttle = 300,
+		.start_tripping	    = 310, /* temp to do tripping */
+		.start_emergency    = 320, /* To protect chip,forcely kernel panic */
+		.stop_mem_throttle  = 395,
+		.start_mem_throttle = 400,
 		.stop_tc  = 13,
 		.start_tc = 10,
 	},
 	.cpufreq = {
-		.limit_1st_throttle  = 1400000, /* 1.200MHz in KHz order */
-		.limit_2nd_throttle  = 600000, /* 200MHz in KHz order */
+		.limit_1st_throttle  = 1600000, /* 1.200MHz in KHz order */
+		.limit_2nd_throttle  = 1500000, /* 200MHz in KHz order */
 	},
 	.temp_compensate = {
-		.arm_volt = 925000, /* vdd_arm in uV for temperature compensation */
-		.bus_volt = 900000, /* vdd_bus in uV for temperature compensation */
-		.g3d_volt = 900000, /* vdd_g3d in uV for temperature compensation */
+		.arm_volt = 1200000, /* vdd_arm in uV for temperature compensation */
+		.bus_volt = 1200000, /* vdd_bus in uV for temperature compensation */
+		.g3d_volt = 1200000, /* vdd_g3d in uV for temperature compensation */
 	},
 };
 #endif

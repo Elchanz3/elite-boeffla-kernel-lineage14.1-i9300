@@ -156,9 +156,9 @@ static char touchkey_debug[104];
 
 #ifdef LED_LDO_WITH_REGULATOR
 
-#define BL_STANDARD	3000
-#define BL_MIN		2500
-#define BL_MAX		3300
+#define BL_STANDARD	4000
+#define BL_MIN		4000
+#define BL_MAX		4000
 
 static unsigned int touchkey_voltage_brightness = BL_STANDARD;
 
