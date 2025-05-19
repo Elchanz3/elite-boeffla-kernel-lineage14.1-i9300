@@ -21,7 +21,7 @@
 #include "gpu_voltage_control.h"
 
 #define MIN_VOLTAGE_GPU  500000
-#define MAX_VOLTAGE_GPU 1300000
+#define MAX_VOLTAGE_GPU 1600000
 #define MALI_STEPS 5
 
 typedef struct mali_dvfs_tableTag{

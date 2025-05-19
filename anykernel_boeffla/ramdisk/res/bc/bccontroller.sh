@@ -59,7 +59,7 @@ if [ "lov_gpu_volt_profiles" == "$1" ]; then
 fi
 
 if [ "lov_gpu_freq" == "$1" ]; then
-	echo "54;108;160;200;266;300;350;400;440;500;533;600;640;700"
+	echo "544;640;666;700;800"
 	exit 0
 fi
 
@@ -124,14 +124,14 @@ if [ "conf_presets" == "$1" ]; then
 		echo "pegasusq;standard;"
 		echo "row;row;"
 		echo "1600000;None;"
-		echo "440/533/600/640/700;overvolt +50mV"
+		echo "544;640;666;700;800;overvolt +50mV" echo
 	fi
 	if [ "Power" ==  "$2" ]; then
 		# gov, gov prof, sched int, sched ext, cpu max, cpu uv, gpu freq, gpu uv
 		echo "zzmoove;zzmoove - performance;"
 		echo "row;row;"
 		echo "1400000;None;"
-		echo "266/350/440/533/600;None"
+		echo "544;640;666;700;800;None"
 	fi
 	if [ "Standard" ==  "$2" ]; then
 		# gov, gov prof, sched int, sched ext, cpu max, cpu uv, gpu freq, gpu uv
@@ -152,7 +152,7 @@ if [ "conf_presets" == "$1" ]; then
 		echo "zzmoove;zzmoove - battery yank;"
 		echo "zen;zen;"
 		echo "1000000;undervolt light;"
-		echo "160/266;undervolt light"
+		echo "544;640;666;700;800;undervolt light"
 	fi
 	exit 0
 fi
@@ -160,34 +160,34 @@ fi
 
 if [ "conf_gpu_freq" == "$1" ]; then
 	if [ "54 only" == "$2" ]; then
-		echo "54;54;54;54;54"
+		echo "544;640;666;700;800"
 	fi
 	if [ "160 only" == "$2" ]; then
-		echo "160;160;160;160;160"
+		echo "544;640;666;700;800"
 	fi
 	if [ "160/266" == "$2" ]; then
-		echo "160;160;160;266;266"
+		echo "544;640;666;700;800"
 	fi
 	if [ "266/350" == "$2" ]; then
-		echo "266;266;266;350;350"
+		echo "544;640;666;700;800"
 	fi
 	if [ "54/108/160/200/266" == "$2" ]; then
-		echo "54;108;160;200;266"
+		echo "544;640;666;700;800"
 	fi
 	if [ "108/160/200/266/350" == "$2" ]; then
-		echo "108;160;200;266;350"
+		echo "544;640;666;700;800"
 	fi
 	if [ "160/266/350/440/533 (default)" == "$2" ]; then
-		echo "160;266;350;440;533"
+		echo "544;640;666;700;800"
 	fi
 	if [ "266/350/440/533/600" == "$2" ]; then
-		echo "266;350;440;533;600"
+		echo "544;640;666;700;800"
 	fi
 	if [ "350/440/533/600/640" == "$2" ]; then
-		echo "350;440;533;600;640"
+		echo "544;640;666;700;800"
 	fi
 	if [ "440/533/600/640/700" == "$2" ]; then
-		echo "440;533;600;640;700"
+		echo "544;640;666;700;800"
 	fi
 	exit 0
 fi
@@ -241,6 +241,9 @@ if [ "conf_gpu_volt" == "$1" ]; then
 	fi
 	if [ "overvolt +100mV" == "$2" ]; then
 		echo "100000;100000;100000;100000;100000"
+	fi
+        if [ "overvolt +150mV" == "$2" ]; then
+		echo "150000;150000;150000;150000;150000"
 	fi
 	exit 0
 fi
@@ -345,7 +348,7 @@ fi
 
 if [ "param_gpu_uv" == "$1" ]; then
 	# GPU UV min/max/steps
-	echo "500000;1200000;25000"
+	echo "500000;1600000;15000"
 	exit 0
 fi
 
