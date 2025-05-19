@@ -12,19 +12,19 @@
 
 BOEFFLA_VERSION="6.0.0.1-beta1-CM14.1-i9300"
 
-TOOLCHAIN="/mnt/mount3/source/linux/toolchain/gcc-linaro-6.1.1-2016.08-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-"
+TOOLCHAIN="/home/chanz22/Imagens/gcc-linaro-4.9-2015.05-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-"
 ARCHITECTURE=arm
 COMPILER_FLAGS_KERNEL="-mtune=cortex-a9 -fno-diagnostics-show-caret"
 COMPILER_FLAGS_MODULE="-mtune=cortex-a9 -fno-diagnostics-show-caret"
 
 KERNEL_IMAGE="zImage"
-COMPILE_DTB="y"
+COMPILE_DTB="n"
 DTBTOOL=""
 DTBTOOL_CMD=""
 MODULES_IN_SYSTEM="y"
 OUTPUT_FOLDER=""
 
-DEFCONFIG="boeffla_defconfig"
+DEFCONFIG="elite-boeffla_defconfig"
 DEFCONFIG_VARIANT=""
 
 KERNEL_NAME="Elite-Boeffla-Kernel"
